@@ -7,6 +7,12 @@
 # requirements.txt生成方法
 # pip freeze > requirements.txt　から必要なライブラリに絞る。バージョンを合わせる
 #
+# render
+#  [Reagion] 日本に近い地域を選択する　Singapore
+#  [Build Command] pip install -r requirements.txt
+#  [Start Command] gunicorn app:app を gunicorn --chdir src view:app
+#   [Addvanced][Add Environment Variable] PYTHON_VERSION 追加、Python -V で確認した値を入れる 3.11.5
+#
 
 # from flask import Flask
 from flask import Flask, render_template
